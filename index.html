@@ -348,15 +348,22 @@
                 {
                     ans = "Hii" + name + " u  cancel the game";
                 }
-                let msg1= prompt("Hii" + name + " !! . Here One Surpirse For you. If u Want to see this , So pls " + 
-                " Solve this question. Do u want to solve it Type yes or no!!")
+                let msg1= prompt("Hii " + name + " !! .\n"+
+                                "There is  Two Surpirse For you.\n"+
+                                "If you creck the quize , you are able to get your surprise. \n" + 
+                                "Do u want to solve it.      Type yes or no!!"
+                                )
 
                 if(msg1 == "yes" || msg1 =="YES" || msg1=="Yes" || msg1 == "YEs" || msg1 == "yEs" || msg1 == "y")
                 {
-                     let choose1 = prompt("There are Two Questions. U have to give correct Ans of each. u have to solve 1st ques  then 2nd question ." +
-                     "if any ans is wrong and any qus is skip then u looses your Gift.. So be Carefull" + 
-                     " Lets play!! " + 
-                     "Choose 1 for First Question and then choose 2nd for seconf question..")
+                    let choose1 = prompt("Some Tips:\n"  +
+                                " 1.  There are 2 Questions. \n" + 
+                                " 2.  You have to attemp question in order to 1,2,3.\n"+
+                                " 3.  If you are going to attempt question again , Make sure that your page is Refreshed (Press F5).\n"+
+                                " 4.  If You will skip or Unanswered any question , then you lose thier surprise. \n"+
+                                " 5.  All answered are correct to get surprised ..\n" +'\n'+
+                                " Lets play!! \n" + '\n'+
+                                "1 is for 1st Ques , 2 is for 2nd Ques  \n Press 1 For Start")
                     if(choose1 == null || choose1 == "")
                     {
                         ans = name + " to cancel without choosig number";
