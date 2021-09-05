@@ -396,7 +396,15 @@ animation-duration: 1.5s;
       /* margin-bottom: 80px; */
 
   }
-  
+  .prompt1{
+    font-size: 40px;
+    color: red;
+    position: fixed;
+    left: 80px;
+    top: 150px;
+    /* margin-bottom: 80px; */
+
+}
   
 
 
