@@ -229,6 +229,8 @@
         <button  style="font-size: 30px" onclick="myFunction2021()">Try it</button>
 
             <p class="prompt" id="demo2"></p>
+            <p class="prompt1" id="demo3"></p>
+
 
         
 
@@ -288,7 +290,7 @@
     <form method="dialog" action="ready.php">
             <div class="enter-name">
                 <input class="pulse infinite" type="name" required="" maxlength="50" name="n" placeholder="👉 यहाँ अपना नाम लिखें...">
-                <button class="btn shake " onclick="myfunction()"><span>👉देखें</span></button>
+                <button class="btn shake " onclick="myFunction2021()"><span>👉Start Quize</span></button>
             </div>
     </form>
 
@@ -331,45 +333,184 @@
 
     <script>
         function myFunction2021(){
-            let text ;
+            let ans ;
             let frist;
-            let num = prompt("pls choode no. 1 and 2. 1 for prsnl and 2 for other")
-            if(num == null || num == "")
+            let space = "                                                                          ";
+
+            let name = prompt("Pls Enter Your Name" , "Laxman")
+            if(name == null || name == "")
             {
-                text = "user cancel the game";
+                ans = " Hii user u  cancel the game";
             }
+            else if(name == "N")
+            {
+                if(name == null || name == "")
+                {
+                    ans = "Hii" + name + " u  cancel the game";
+                }
+                let msg1= prompt("Hii" + name + " !! . Here One Surpirse For you. If u Want to see this , So pls " + 
+                " Solve this question. Do u want to solve it Type yes or no!!")
+
+                if(msg1 == "yes" || msg1 =="YES" || msg1=="Yes" || msg1 == "YEs" || msg1 == "yEs" || msg1 == "y")
+                {
+                     let choose1 = prompt("There are Two Questions. U have to give correct Ans of each. u have to solve 1st ques  then 2nd question ." +
+                     "if any ans is wrong and any qus is skip then u looses your Gift.. So be Carefull" + 
+                     " Lets play!! " + 
+                     "Choose 1 for First Question and then choose 2nd for seconf question..")
+                    if(choose1 == null || choose1 == "")
+                    {
+                        ans = name + " to cancel without choosig number";
+                    }
+
+                    else if(choose1 == 1)
+                     {
+                            var qus1 = prompt("Do u remember your NickName that i was given to u. if yes, Enter the NAME ")
+                            if(qus1 == null || qus1 == "")
+                            ans =  name + "  u cancel the tab with out enter the Nickname";
+                            // else if(text1 != "Nando")
+                            // {
+                            //     ans = " Nando nai h"
+                            // }
+                            else if(qus1 != null)
+                            {
+
+                                
+                                let  qus2= prompt("type the date with month that we was meet at firtst itme")
+                                {
+                                    if(qus2 == null || qus2 == "")
+                                    ans =  name + "  u cancel the tab with out "
+                                    + "solve the qus 2nd";
+                                    else
+                                    ans = "Your Answers are Submitted.";
+
+                                    
+                                }
+                                
+                                ans1 = "Better Luck Next Time";
+                                // print("Yout anr are wrong");
+                                
+                                // if(text1 == Nando)
+                                // ans = "its correct";
+                                // else{
+                                //     ans = "not correct";
+                                // }
+                                // text = " u enter wrong date";
+                            }
+                    }
+                    else if(choose1 == 2) 
+                    {
+                        ans = name + " plse solve the first question then 2nd. ";
+                    }
+                    else{
+                        ans = name + " you choose wrong number.";
+                    }
+
+                }
+                // ans =  name + " in lese if";
+            }
+            else if(name !="N")
+            {
+                if(name == null || name == "")
+                {
+                    ans = "Hii" + name + " u  cancel the game !" + "                 are u fool ";
+                }
+
+                let msg2= prompt("Hii " + name + " !! .\n"+
+                                "There is  One Surpirse For you.\n"+
+                                "If you creck the quize , you are able to get your surprise. \n" + 
+                                "Do u want to solve it.      Type yes or no!!"
+                                )
+
+
+                if(msg2 == "yes" || msg2 =="YES" || msg2=="Yes" || msg2 == "YEs" || msg2 == "yEs" || msg2 == "y")
+                {
+                     let choose1 = prompt("Some Tips:\n"  +
+                      " 1.  There are 3 Questions. \n" + 
+                      " 2.  You have to attemp quetion in order to 1,2,3.\n"+
+                      " 3.  If you are going to attempt /nquestion" +" again , Make sure that your page is refreshed (Press F5).\n"+
+                      " 4.  If You will skip or Unanswered any question , then yoy loose thier surprise. \n"+
+                      " 5.  All answered are correct to get surprised ..\n" +'\n'+
+                     " Lets play!! \n" + '\n'+
+                     "1 is for 1st Ques , 2 is for 2nd Ques, 3 for 3rd Ques.\n Press 1")
+                    if(choose1 == null || choose1 == "")
+                    {
+                        ans = name + " to cancel without choosig number";
+                    }
+
+                    else if(choose1 == 1)
+                    {
+                            var qus1 = prompt("Question 1: ")
+                            if(qus1 == null || qus1 == "")
+                            ans =  name + "  u cancel the tab with \n out enter the Nickname";
+
+                            else if(qus1 !=null)
+                            {
+                                let qus2= prompt("Question2:")
+                                if(qus2 == null || qus1 == "")
+                                ans =  name + "  u cancel the tab with out \n give ans of question 2";
+
+                                else if(qus2 !=null)
+                                {
+                                    let qus3= prompt("Question3:")
+                                    if(qus2 == null || qus1 == "")
+                                    ans =  name + "  u cancel the tab with /n out give ans of question 3";
+                                    ans = "Your Answers are Submitted.";
+
+                                }
+                                ans1 = "Better Luck Next Time";
+
+                            }
+                    }
+                    else if(choose1 == 2) 
+                    {
+                        ans = name + " plse solve the first question then 2nd. ";
+                    }
+                    else if(choose1 == 3) 
+                    {
+                        ans = name + " plse solve the first question then 1st then 2nd . ";
+                    }
+                    else{
+                        ans = name + " you choose wrong number.";
+                    }
+                }
+                
+            }
+            
+        else
+        {
+                ans = "Fuck";
+        }
+
+
+            // let num = prompt("pls choode no. 1 and 2. 1 for prsnl and 2 for other")
+            // if(num == null || num == "")
+            // {
+            //     text = "user cancel the game";
+            // }
             // else {
             //     text = "Hello " + num + "! How are you today?";
             //  }
-            else if(num==1){
-                var text1 = prompt("what is date of iur first meet")
-                if(text1 == null || text1 == "")
-                text = "ur r follish";
-                else
-                {
-                    if(typeof text1 == 'number')
-                    text = "its number";
-                    else{
-                        text = "not number"
-                    }
-                    // text = " u enter wrong date";
-                }
-            }
-            else if(num==2)
-            {
-                let prompt2 = prompt("u have to find a clue");
-                if(prompt2==null || prompt2 =="")
-                {
-                    text = "U r follish1";
-                }
-                else{
-                    text = "Ur ans is wrong"
-                }
-            }
-            else{
-                text ="U enter wrong number"
-            }
-            document.getElementById("demo2").innerHTML = text;
+            // else if(num==1){
+                
+            // }
+            // else if(num==2)
+            // {
+            //     let prompt2 = prompt("u have to find a clue");
+            //     if(prompt2==null || prompt2 =="")
+            //     {
+            //         text = "U r follish1";
+            //     }
+            //     else{
+            //         text = "Ur ans is wrong"
+            //     }
+            // }
+            // else{
+            //     text ="U enter wrong number"
+            // }
+            document.getElementById("demo2").innerHTML = ans ;
+            document.getElementById("demo3").innerHTML =ans1;
+
+
 
         }
     </script>
@@ -415,3 +556,7 @@
 पर देखलो तुम्हारा जन्मदिन तो हमे याद है!!
 
 🎂💐🎉🎉🎊 -->
+
+<!-- 
+    1.U have to refresh your page when u play again ..
+ -->
