@@ -389,7 +389,7 @@ animation-duration: 1.5s;
 
   .prompt{
       font-size: 40px;
-      color: black;
+      color: blue;
       position: fixed;
       left: 80px;
       top: 100px;
